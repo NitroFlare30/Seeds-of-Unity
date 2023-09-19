@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlovl0uxgfpst"]
+
+[ext_resource type="Script" path="res://Scripts/Globals/MasterInterfaceGlobals.cs" id="1_fhovq"]
+[ext_resource type="PackedScene" uid="uid://cygph8jvila7w" path="res://Scenes/Title_Scene.tscn" id="2_soluj"]
+
+[node name="Master_Interface" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fhovq")
+
+[node name="InGameUI" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Title_Scene" parent="." instance=ExtResource("2_soluj")]
