@@ -1,8 +1,19 @@
 [gd_scene load_steps=2 format=3 uid="uid://cygph8jvila7w"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4i3o8"]
+[ext_resource type="Texture2D" uid="uid://discxf0bwd372" path="res://Art/CG/New Home Screen.jpg" id="1_iaudv"]
 
-[node name="Title_Scene" type="Node2D"]
+[node name="Title_Scene" type="Control"]
+layout_mode = 3
+anchors_preset = 0
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = SubResource("CompressedTexture2D_4i3o8")
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -977.0
+offset_top = -347.0
+offset_right = 983.0
+offset_bottom = 360.0
+texture = ExtResource("1_iaudv")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Camera2D" type="Camera2D" parent="."]
