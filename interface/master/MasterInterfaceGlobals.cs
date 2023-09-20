@@ -3,7 +3,7 @@ using System;
 
 public partial class MasterInterfaceGlobals : Control
 {
-    [Export]
+	[Export]
 	private string current_scene_name;
 
 	// Called when the node enters the scene tree for the first time.
@@ -18,8 +18,8 @@ public partial class MasterInterfaceGlobals : Control
 	}
 
 	public void LoadScene(string levelName)
-    {
+	{
 		string scene_path = $"res://Scenes/{levelName}.tscn";
 		GetTree().ChangeSceneToFile(scene_path);
-    }
+	}
 }
