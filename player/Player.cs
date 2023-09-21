@@ -4,7 +4,7 @@ using System;
 public partial class Player : CharacterBody2D
 {
 
-	[Export] private float Player_Speed { get; set; } = 50f;
+	[Export] private float Player_Speed { get; set; } = 64f;
 
 	private AnimationPlayer _animationPlayer;
 
@@ -20,6 +20,11 @@ public partial class Player : CharacterBody2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
+		MovePlayer();
+	}
+
+	private void MovePlayer()
+    {
 		float move_x = Input.GetAxis("player_move_left", "player_move_right");
 		float move_y = Input.GetAxis("player_move_up", "player_move_down");
 		Velocity = new Vector2(move_x, move_y).Normalized() * Player_Speed;
@@ -61,7 +66,5 @@ public partial class Player : CharacterBody2D
 			lastYPos = 0;
 		}
 		MoveAndSlide();
-		// Register player sprite direction based on movement
-		
 	}
 }
