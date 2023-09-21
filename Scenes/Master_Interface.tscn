@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dlovl0uxgfpst"]
 
 [ext_resource type="Script" path="res://interface/master/MasterInterfaceGlobals.cs" id="1_53q5k"]
-[ext_resource type="PackedScene" uid="uid://cygph8jvila7w" path="res://Scenes/Title_Scene.tscn" id="2_nndhm"]
+[ext_resource type="PackedScene" uid="uid://cygph8jvila7w" path="res://scenes/Title_Scene.tscn" id="2_nndhm"]
 
 [node name="Master_Interface" type="Control"]
 layout_mode = 3

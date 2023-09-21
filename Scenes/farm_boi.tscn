@@ -3,9 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://okfxa6e2joqh" path="res://Art/Sprites/Nature/Cliff.png" id="1_gmfj4"]
 [ext_resource type="Texture2D" uid="uid://dtv2ah72awpho" path="res://Art/Sprites/Nature/ShortGrassToLong.png" id="2_bsk8a"]
 [ext_resource type="Texture2D" uid="uid://e6dxtiwrbop5" path="res://Art/Sprites/Nature/DirtRoad.png" id="3_olba1"]
-[ext_resource type="PackedScene" uid="uid://bovish3n4itv4" path="res://player.tscn" id="4_8wo36"]
+[ext_resource type="PackedScene" uid="uid://bovish3n4itv4" path="res://player/player.tscn" id="4_8wo36"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_58p3o"]
+resource_name = "cliff"
 texture = ExtResource("1_gmfj4")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
@@ -54,6 +55,7 @@ texture_region_size = Vector2i(32, 32)
 1:4/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_peup6"]
+resource_name = "grass"
 texture = ExtResource("2_bsk8a")
 texture_region_size = Vector2i(32, 32)
 0:2/0 = 0
@@ -73,36 +75,24 @@ texture_region_size = Vector2i(32, 32)
 1:1/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3ca6j"]
+resource_name = "dirt_road"
 texture = ExtResource("3_olba1")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
-0:0/0/terrain = 0
 1:0/0 = 0
-1:0/0/terrain = 0
 2:0/0 = 0
-2:0/0/terrain = 0
 3:0/0 = 0
 4:0/0 = 0
 0:1/0 = 0
-0:1/0/terrain = 0
 1:1/0 = 0
-1:1/0/terrain = 0
 2:1/0 = 0
-2:1/0/terrain = 0
 3:1/0 = 0
-3:1/0/terrain = 0
 4:1/0 = 0
-4:1/0/terrain = 0
 0:2/0 = 0
-0:2/0/terrain = 0
 1:2/0 = 0
-1:2/0/terrain = 0
 2:2/0 = 0
-2:2/0/terrain = 0
 3:2/0 = 0
-3:2/0/terrain = 0
 4:2/0 = 0
-4:2/0/terrain = 0
 0:3/0 = 0
 1:3/0 = 0
 2:3/0 = 0
@@ -110,6 +100,7 @@ texture_region_size = Vector2i(32, 32)
 4:3/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_k1eu2"]
+resource_local_to_scene = true
 tile_size = Vector2i(32, 32)
 sources/1 = SubResource("TileSetAtlasSource_58p3o")
 sources/2 = SubResource("TileSetAtlasSource_peup6")
@@ -164,4 +155,3 @@ layer_5/tile_data = PackedInt32Array()
 
 [node name="Player" parent="." instance=ExtResource("4_8wo36")]
 position = Vector2(461, 330)
-scale = Vector2(0.99529, 1)
