@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://dlovl0uxgfpst"]
+[gd_scene load_steps=2 format=3 uid="uid://dlovl0uxgfpst"]
 
 [ext_resource type="Script" path="res://interface/master/MasterInterfaceGlobals.cs" id="1_53q5k"]
-[ext_resource type="PackedScene" uid="uid://cygph8jvila7w" path="res://scenes/Title_Scene.tscn" id="2_nndhm"]
 
 [node name="Master_Interface" type="Control"]
 layout_mode = 3
@@ -18,5 +17,3 @@ script = ExtResource("1_53q5k")
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-
-[node name="Title_Scene" parent="." instance=ExtResource("2_nndhm")]
