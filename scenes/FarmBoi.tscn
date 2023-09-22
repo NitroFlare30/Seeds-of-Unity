@@ -1,23 +1,23 @@
 [gd_scene load_steps=34 format=3 uid="uid://crgil0dc5jwt5"]
 
-[ext_resource type="Texture2D" uid="uid://cuk67tnb0mly4" path="res://landscape/Nature/RiverWater-Sheet.png" id="1_apfww"]
-[ext_resource type="Texture2D" uid="uid://okfxa6e2joqh" path="res://landscape/Nature/Cliff.png" id="2_qpjuu"]
-[ext_resource type="Texture2D" uid="uid://c2hyuw3q8jkww" path="res://landscape/Nature/RiverFlowDownAlgaeUnderwater-Sheet.png" id="3_hujmo"]
-[ext_resource type="PackedScene" uid="uid://bovish3n4itv4" path="res://player/player.tscn" id="4_8wo36"]
-[ext_resource type="Texture2D" uid="uid://drbbfaifvof0e" path="res://landscape/Nature/RiverFlowDownRock-Sheet.png" id="4_jmnmc"]
-[ext_resource type="Texture2D" uid="uid://bhoqa4dp5vutw" path="res://landscape/Nature/RiverFlowDownRockUnderwater-Sheet.png" id="5_l6pbx"]
-[ext_resource type="Texture2D" uid="uid://bhdb8n4wstb6o" path="res://landscape/Nature/RiverFlowDownSmallRockUnderwater-Sheet.png" id="6_ku4a0"]
-[ext_resource type="Texture2D" uid="uid://bx6csly572e0c" path="res://landscape/Nature/RiverFlowLeft-Sheet.png" id="7_a1l4p"]
-[ext_resource type="Texture2D" uid="uid://d037f4n6o5s5f" path="res://landscape/Nature/RiverFlowLeftRock-Sheet.png" id="8_lu3x6"]
-[ext_resource type="Texture2D" uid="uid://boidhxdbobe8d" path="res://landscape/Nature/RiverFlowLeftRockUnderwater-Sheet.png" id="9_xllm8"]
-[ext_resource type="Texture2D" uid="uid://bl1e8i8okkbmp" path="res://landscape/Nature/RiverFlowLeftSmallRockUnderwater-Sheet.png" id="10_fcdla"]
-[ext_resource type="Texture2D" uid="uid://dtv2ah72awpho" path="res://landscape/Nature/ShortGrassToLong.png" id="11_jjn6q"]
-[ext_resource type="Texture2D" uid="uid://sl2p1oocwtd1" path="res://landscape/Nature/RiverFlowLeftAlgaeUnderwater-Sheet.png" id="12_ekduv"]
-[ext_resource type="Texture2D" uid="uid://e6dxtiwrbop5" path="res://landscape/Nature/DirtRoad.png" id="13_ndi8v"]
-[ext_resource type="Texture2D" uid="uid://bttx1g20hyaj3" path="res://landscape/Nature/RiverFlowDown-Sheet.png" id="14_hjio5"]
+[ext_resource type="Texture2D" uid="uid://cuk67tnb0mly4" path="res://landscape/Nature/RiverWater-Sheet.png" id="1_r4dou"]
+[ext_resource type="Texture2D" uid="uid://okfxa6e2joqh" path="res://landscape/Nature/Cliff.png" id="2_eqvgf"]
+[ext_resource type="Texture2D" uid="uid://c2hyuw3q8jkww" path="res://landscape/Nature/RiverFlowDownAlgaeUnderwater-Sheet.png" id="3_u0682"]
+[ext_resource type="Texture2D" uid="uid://drbbfaifvof0e" path="res://landscape/Nature/RiverFlowDownRock-Sheet.png" id="4_1h8yw"]
+[ext_resource type="Texture2D" uid="uid://bhoqa4dp5vutw" path="res://landscape/Nature/RiverFlowDownRockUnderwater-Sheet.png" id="5_u3l13"]
+[ext_resource type="Texture2D" uid="uid://bhdb8n4wstb6o" path="res://landscape/Nature/RiverFlowDownSmallRockUnderwater-Sheet.png" id="6_cmqas"]
+[ext_resource type="Texture2D" uid="uid://bx6csly572e0c" path="res://landscape/Nature/RiverFlowLeft-Sheet.png" id="7_ixtk8"]
+[ext_resource type="Texture2D" uid="uid://d037f4n6o5s5f" path="res://landscape/Nature/RiverFlowLeftRock-Sheet.png" id="8_fy8gy"]
+[ext_resource type="Texture2D" uid="uid://boidhxdbobe8d" path="res://landscape/Nature/RiverFlowLeftRockUnderwater-Sheet.png" id="9_q8tpp"]
+[ext_resource type="Texture2D" uid="uid://bl1e8i8okkbmp" path="res://landscape/Nature/RiverFlowLeftSmallRockUnderwater-Sheet.png" id="10_t138g"]
+[ext_resource type="Texture2D" uid="uid://dtv2ah72awpho" path="res://landscape/Nature/ShortGrassToLong.png" id="11_v5rq6"]
+[ext_resource type="Texture2D" uid="uid://sl2p1oocwtd1" path="res://landscape/Nature/RiverFlowLeftAlgaeUnderwater-Sheet.png" id="12_mduvk"]
+[ext_resource type="Texture2D" uid="uid://e6dxtiwrbop5" path="res://landscape/Nature/DirtRoad.png" id="13_st0d7"]
+[ext_resource type="Texture2D" uid="uid://bttx1g20hyaj3" path="res://landscape/Nature/RiverFlowDown-Sheet.png" id="14_265bx"]
+[ext_resource type="PackedScene" uid="uid://bovish3n4itv4" path="res://player/player.tscn" id="15_ylnwf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xh5ok"]
-texture = ExtResource("1_apfww")
+texture = ExtResource("1_r4dou")
 texture_region_size = Vector2i(32, 32)
 0:0/animation_columns = 6
 0:0/animation_separation = Vector2i(2, 0)
@@ -80,7 +80,7 @@ texture_region_size = Vector2i(32, 32)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_58p3o"]
 resource_name = "cliff"
-texture = ExtResource("2_qpjuu")
+texture = ExtResource("2_eqvgf")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -128,7 +128,7 @@ texture_region_size = Vector2i(32, 32)
 1:4/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_usj4g"]
-texture = ExtResource("3_hujmo")
+texture = ExtResource("3_u0682")
 texture_region_size = Vector2i(32, 32)
 0:0/animation_speed = 3.5
 0:0/animation_frame_0/duration = 1.0
@@ -139,7 +139,7 @@ texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_61s8u"]
-texture = ExtResource("4_jmnmc")
+texture = ExtResource("4_1h8yw")
 texture_region_size = Vector2i(32, 32)
 0:0/animation_speed = 3.3
 0:0/animation_frame_0/duration = 1.0
@@ -150,7 +150,7 @@ texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gh4jy"]
-texture = ExtResource("5_l6pbx")
+texture = ExtResource("5_u3l13")
 texture_region_size = Vector2i(32, 32)
 0:0/animation_speed = 3.1
 0:0/animation_frame_0/duration = 1.0
@@ -161,7 +161,7 @@ texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fk6l4"]
-texture = ExtResource("6_ku4a0")
+texture = ExtResource("6_cmqas")
 texture_region_size = Vector2i(32, 32)
 0:0/animation_speed = 3.5
 0:0/animation_frame_0/duration = 1.0
@@ -172,7 +172,7 @@ texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cgy0p"]
-texture = ExtResource("7_a1l4p")
+texture = ExtResource("7_ixtk8")
 texture_region_size = Vector2i(32, 32)
 0:0/animation_speed = 3.5
 0:0/animation_frame_0/duration = 1.0
@@ -183,7 +183,7 @@ texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6kqpl"]
-texture = ExtResource("7_a1l4p")
+texture = ExtResource("7_ixtk8")
 texture_region_size = Vector2i(32, 32)
 0:0/animation_speed = 3.3
 0:0/animation_frame_0/duration = 1.0
@@ -194,7 +194,7 @@ texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p0kxi"]
-texture = ExtResource("8_lu3x6")
+texture = ExtResource("8_fy8gy")
 texture_region_size = Vector2i(32, 32)
 0:0/animation_speed = 3.1
 0:0/animation_frame_0/duration = 1.0
@@ -205,7 +205,7 @@ texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o3c7k"]
-texture = ExtResource("9_xllm8")
+texture = ExtResource("9_q8tpp")
 texture_region_size = Vector2i(32, 32)
 0:0/animation_speed = 3.5
 0:0/animation_frame_0/duration = 1.0
@@ -216,7 +216,7 @@ texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ied1x"]
-texture = ExtResource("10_fcdla")
+texture = ExtResource("10_t138g")
 texture_region_size = Vector2i(32, 32)
 0:0/animation_speed = 3.1
 0:0/animation_frame_0/duration = 1.0
@@ -228,7 +228,7 @@ texture_region_size = Vector2i(32, 32)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_peup6"]
 resource_name = "grass"
-texture = ExtResource("11_jjn6q")
+texture = ExtResource("11_v5rq6")
 texture_region_size = Vector2i(32, 32)
 0:2/0 = 0
 0:1/0 = 0
@@ -247,7 +247,7 @@ texture_region_size = Vector2i(32, 32)
 1:1/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vlaki"]
-texture = ExtResource("12_ekduv")
+texture = ExtResource("12_mduvk")
 texture_region_size = Vector2i(32, 32)
 0:0/animation_speed = 3.5
 0:0/animation_frame_0/duration = 1.0
@@ -259,7 +259,7 @@ texture_region_size = Vector2i(32, 32)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3ca6j"]
 resource_name = "dirt_road"
-texture = ExtResource("13_ndi8v")
+texture = ExtResource("13_st0d7")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -283,7 +283,7 @@ texture_region_size = Vector2i(32, 32)
 4:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a88wd"]
-texture = ExtResource("14_hjio5")
+texture = ExtResource("14_265bx")
 texture_region_size = Vector2i(32, 32)
 0:0/animation_speed = 3.5
 0:0/animation_frame_0/duration = 1.0
@@ -294,7 +294,7 @@ texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ky33j"]
-texture = ExtResource("14_hjio5")
+texture = ExtResource("14_265bx")
 texture_region_size = Vector2i(32, 32)
 0:0/animation_speed = 3.3
 0:0/animation_frame_0/duration = 1.0
@@ -305,7 +305,7 @@ texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bv58p"]
-texture = ExtResource("14_hjio5")
+texture = ExtResource("14_265bx")
 texture_region_size = Vector2i(32, 32)
 0:0/animation_speed = 3.1
 0:0/animation_frame_0/duration = 1.0
@@ -383,5 +383,5 @@ layer_5/y_sort_origin = 0
 layer_5/z_index = 0
 layer_5/tile_data = PackedInt32Array()
 
-[node name="Player" parent="." instance=ExtResource("4_8wo36")]
+[node name="Player" parent="." instance=ExtResource("15_ylnwf")]
 position = Vector2(461, 330)

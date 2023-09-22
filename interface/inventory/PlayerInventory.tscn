@@ -1,0 +1,62 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjbu1pm444vbt"]
+
+[ext_resource type="Script" path="res://interface/inventory/PlayerInventory.cs" id="1_c5uio"]
+[ext_resource type="PackedScene" uid="uid://0r4p6h05wmap" path="res://interface/inventory/InventorySlot.tscn" id="2_5vge8"]
+
+[node name="PlayerInventory" type="Control" node_paths=PackedStringArray("hotbarPanel", "rucksackPanel")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_c5uio")
+hotbarPanel = NodePath("InventoryGUI/MasterContainer/Inventory/Hotbar")
+rucksackPanel = NodePath("InventoryGUI/MasterContainer/Inventory/Rucksack")
+inventorySlotPrefab = ExtResource("2_5vge8")
+
+[node name="InventoryGUI" type="CanvasLayer" parent="."]
+
+[node name="MasterContainer" type="TabContainer" parent="InventoryGUI"]
+custom_minimum_size = Vector2(600, 400)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+tab_alignment = 2
+
+[node name="Inventory" type="Panel" parent="InventoryGUI/MasterContainer"]
+layout_mode = 2
+
+[node name="Hotbar" type="HBoxContainer" parent="InventoryGUI/MasterContainer/Inventory"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 100.0
+offset_right = 350.0
+offset_bottom = 140.0
+alignment = 1
+
+[node name="Rucksack" type="GridContainer" parent="InventoryGUI/MasterContainer/Inventory"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 150.0
+offset_right = 350.0
+offset_bottom = 270.0
+columns = 8
+
+[node name="DescriptionPanel" type="Panel" parent="InventoryGUI/MasterContainer/Inventory"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -225.0
+offset_top = -150.0
+offset_right = -25.0
+offset_bottom = 150.0
+grow_horizontal = 0
+grow_vertical = 2

@@ -1,12 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://cygph8jvila7w"]
 
-[ext_resource type="Script" path="res://scenes/Title_Scene.cs" id="1_dro0r"]
-[ext_resource type="Texture2D" uid="uid://discxf0bwd372" path="res://interface/title/New Home Screen.jpg" id="1_pm40y"]
+[ext_resource type="Script" path="res://interface/title/TitleScene.cs" id="1_axksd"]
+[ext_resource type="Texture2D" uid="uid://discxf0bwd372" path="res://interface/title/New Home Screen.jpg" id="2_186if"]
 
-[node name="Title_Scene" type="Control"]
+[node name="TitleScene" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_dro0r")
+script = ExtResource("1_axksd")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
@@ -15,7 +15,7 @@ anchor_mode = 0
 layout_mode = 0
 offset_right = 3539.0
 offset_bottom = 706.0
-texture = ExtResource("1_pm40y")
+texture = ExtResource("2_186if")
 expand_mode = 3
 stretch_mode = 4
 
