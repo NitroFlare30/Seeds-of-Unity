@@ -14,6 +14,7 @@ config/name="Seeds of Unity"
 run/main_scene="res://scenes/Title_Scene.tscn"
 config/features=PackedStringArray("4.1", "C#", "Mobile")
 config/icon="res://icon.svg"
+run/size/mode=0
 
 [autoload]
 
