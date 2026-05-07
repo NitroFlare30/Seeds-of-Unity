@@ -1,9 +1,0 @@
-[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://dmncuu3peho64"]
-
-[ext_resource type="Script" path="res://resource_types/Item.cs" id="1_tjjn0"]
-
-[resource]
-script = ExtResource("1_tjjn0")
-ItemName = ""
-Description = ""
-ItemBaseValue = 0.0
