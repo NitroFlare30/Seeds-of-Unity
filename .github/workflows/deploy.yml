@@ -41,8 +41,6 @@ jobs:
             ${{ runner.os }}-plugins-
       - name: Install dependencies
         run: npm ci
-      - name: Install Quartz plugins
-        run: npm run install-plugins
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
