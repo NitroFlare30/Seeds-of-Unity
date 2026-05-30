@@ -36,15 +36,15 @@ tags: [farming, crops]
 
 ---
 
-### 3. Fungal Crops
-**Bioluminescent, eerie, ecosystem-focused**
+### 3. [[Fungus-Crops|Fungal Crops]]
+**Bioluminescent, eerie, stat-boosting**
 
 | | |
 |---|---|
 | **Unlock** | **Gray Season exclusive** — only viable during Gray |
 | **Best season** | **Gray Season ONLY** — impossible other seasons |
 | **Visual** | Bioluminescent, glowing forms |
-| **Uses** | Unique resources, possibly Tanilian-specific |
+| **Uses** | Stat boosts (stamina, strength, speed, gem resonance) |
 | **Rarity** | Scarce, seasonal unlock |
 
 ---
