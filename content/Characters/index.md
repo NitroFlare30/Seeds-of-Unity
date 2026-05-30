@@ -12,38 +12,38 @@ All human characters in the Seeds of Unity settlement, spanning three generation
 
 ---
 
-## Active Characters (With Dialogue)
+## All Characters
 
-| Name | Generation | Ship | Archetype | Romanceable |
+| Name | Generation | Ship | Role | Romanceable |
 |---|---|---|---|---|
-| [[Alex\|Alex Everett]] | Gen 1 | Native (born on Raea) | Supporting | Yes |
-| [[Emily-Scott\|Emily Scott]] | Gen 2 | Native | Supporting | Yes |
-| [[Bella-Johnson\|Bella Johnson]] | Gen 2 | Native | Anti-Hero | Yes |
-| [[Arno-Nkosi\|Arno Nkosi]] | Gen 2 | Native | Supporting | Yes |
-| [[Ayla-White\|Ayla White]] | Gen 2 | Native | Supporting | Yes |
-| [[Bryan-Carrick\|Bryan Carrick]] | Gen 2 | Native | Supporting | Yes |
-| [[Eugene-Clemens\|Eugene Clemens]] | Gen 1 | Native | Supporting | Yes |
-| [[Jesse-Wilson\|Jesse Wilson]] | Gen 2 | Native | Supporting | Yes |
-| [[Jet-Martin\|Jet Martin]] | — | Solace | Supporting | Yes |
-| [[Julian-Garcia\|Julian Garcia]] | Gen 2 | Native | Supporting | Yes |
-| [[Kane-Ziegler\|Kane Ziegler]] | Gen 2 | Native | Anti-Hero | Yes |
-| [[Lena-Miller\|Lena Miller]] | Gen 2 | Native | Supporting | Yes |
-| [[Lucas-Walker\|Lucas Walker]] | — | Solace | Hero | Yes |
-| [[Miya-Ziegler\|Miya Ziegler]] | Gen 2 | Native | Supporting | Yes |
-| [[Nikki-Taylor\|Nikki Taylor]] | — | Solace | Supporting | Yes |
-| [[Alfred-Johnson\|Alfred Johnson (Mayor)]] | Gen 1 | Native | NPC | No |
-| [[Wilhelm\|Wilhelm]] | Gen 1 | Native | NPC | No |
-| [[Luhan\|Luhan Nkosi]] | Gen 1 | Native | NPC | No |
+| [[Alfred-Johnson\|Alfred Johnson (Mayor)]] | Gen 1 | Native | Main | No |
+| [[Darryl-Everett\|Darryl Everett ("Uncle Dink")]] | Gen 1 | Native | Main | No |
+| [[Lucas-Walker\|Lucas Walker]] | — | Solace | Main | Yes |
+| [[Sir-Corn\|Sir Corn]] | — | — | Main | No |
+| [[Alex\|Alex Everett]] | Gen 1 | Native | Secondary | Yes |
+| [[Arno-Nkosi\|Arno Nkosi]] | Gen 2 | Native | Secondary | Yes |
+| [[Ayla-White\|Ayla White]] | Gen 2 | Native | Secondary | Yes |
+| [[Bella-Johnson\|Bella Johnson]] | Gen 2 | Native | Secondary | Yes |
+| [[Bryan-Carrick\|Bryan Carrick]] | Gen 2 | Native | Secondary | Yes |
+| [[Emily-Scott\|Emily Scott]] | Gen 2 | Native | Secondary | Yes |
+| [[Eugene-Clemens\|Eugene Clemens]] | Gen 2 | Native | Secondary | Yes |
+| [[Jesse-Wilson\|Jesse Wilson]] | Gen 2 | Native | Secondary | Yes |
+| [[Jet-Martin\|Jet Martin]] | — | Solace | Secondary | Yes |
+| [[Julian-Garcia\|Julian Garcia]] | Gen 2 | Native | Secondary | Yes |
+| [[Kane-Ziegler\|Kane Ziegler]] | Gen 2 | Native | Secondary | Yes |
+| [[Lena-Miller\|Lena Miller]] | Gen 2 | Native | Secondary | Yes |
+| [[Miya-Ziegler\|Miya Ziegler]] | Gen 2 | Native | Secondary | Yes |
+| [[Nikki-Taylor\|Nikki Taylor]] | — | Solace | Secondary | Yes |
+| [[Luhan\|Luhan Nkosi]] | Gen 1 | Native | Background | No |
+| [[Wilhelm\|Wilhelm]] | Gen 1 | Native | Background | No |
 
 ---
 
-## NPCs & Background Characters
+## Other
 
 | Name | Role | Status |
 |---|---|---|
 | [[Charlotte-Wilson\|Charlotte Wilson]] | Only surviving original crew; senile | Alive |
-| [[Darryl-Everett\|Darryl Everett ("Uncle Dink")]] | Wanderer outside the bubble | Alive (presumed dead) |
-| [[Sir-Corn\|Sir Corn]] | Sentient corn with a top hat | Alive |
 
 ---
 
