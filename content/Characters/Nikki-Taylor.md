@@ -7,7 +7,7 @@ ship: Solace
 status: Alive
 occupation: Blacksmith apprentice (under Wilhelm)
 skills: [Blacksmithing, Engineering]
-archetype: Supporting
+archetype: Secondary
 romanceable: true
 ---
 
@@ -15,7 +15,7 @@ romanceable: true
 
 > *"I'm not clumsy! It's just... the hammer has opinions."*
 
-**Generation:** Solace crew | **Ship:** Solace | **Archetype:** Supporting | **Romanceable:** Yes
+**Generation:** Solace crew | **Ship:** Solace | **Archetype:** Secondary
 
 ---
 

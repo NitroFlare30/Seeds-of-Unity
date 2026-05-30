@@ -7,13 +7,13 @@ ship: Native (born on Raea)
 status: Alive
 occupation: Blacksmith / Shop owner
 skills: [Blacksmithing, Carpentry, Engineering]
-archetype: NPC
+archetype: Background
 romanceable: false
 ---
 
 # Wilhelm
 
-**Generation:** Gen 1 | **Ship:** Native | **Archetype:** NPC | **Romanceable:** No
+**Generation:** Gen 1 | **Ship:** Native | **Archetype:** Background
 
 ---
 

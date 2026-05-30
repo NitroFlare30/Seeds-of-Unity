@@ -7,7 +7,7 @@ ship: Native (born on Raea)
 status: Alive
 occupation: None specified (lives near the eastern forest)
 skills: [Botany, Foraging, Farming]
-archetype: Supporting
+archetype: Secondary
 romanceable: true
 ---
 
@@ -15,7 +15,7 @@ romanceable: true
 
 > *"The forest near the graveyard — it's strange. Not dangerous. Just... watching."*
 
-**Generation:** Gen 2 | **Ship:** Native | **Archetype:** Supporting | **Romanceable:** Yes
+**Generation:** Gen 2 | **Ship:** Native | **Archetype:** Secondary
 
 ---
 

@@ -7,7 +7,7 @@ ship: Native (born on Raea)
 status: Alive
 occupation: Mayor of the Settlement
 skills: [Politics, Public Speaking, Logistics]
-archetype: NPC
+archetype: Main
 romanceable: false
 ---
 
@@ -15,7 +15,7 @@ romanceable: false
 
 > *"This settlement has survived because we follow the rules. My rules exist for reasons."*
 
-**Generation:** Gen 1 | **Ship:** Native | **Archetype:** NPC | **Romanceable:** No
+**Generation:** Gen 1 | **Ship:** Native | **Archetype:** Main
 
 ---
 

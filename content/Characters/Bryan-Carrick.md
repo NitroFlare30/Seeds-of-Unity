@@ -7,7 +7,7 @@ ship: Native (born on Raea)
 status: Alive
 occupation: Carpenter
 skills: [Carpentry, Farming]
-archetype: Supporting
+archetype: Secondary
 romanceable: true
 ---
 
@@ -15,7 +15,7 @@ romanceable: true
 
 > *"You call that work? I've seen better effort from a rock."*
 
-**Generation:** Gen 2 | **Ship:** Native | **Archetype:** Supporting | **Romanceable:** Yes
+**Generation:** Gen 2 | **Ship:** Native | **Archetype:** Secondary
 
 ---
 

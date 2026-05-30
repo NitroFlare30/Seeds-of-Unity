@@ -7,7 +7,7 @@ ship: Native (born on Raea)
 status: Alive
 occupation: None specified (intellectual / literary)
 skills: [Art, Music, Library Science]
-archetype: Supporting
+archetype: Secondary
 romanceable: true
 ---
 
@@ -15,7 +15,7 @@ romanceable: true
 
 > *"The ocean doesn't need eyes to be beautiful. Neither does the music."*
 
-**Generation:** Gen 2 | **Ship:** Native | **Archetype:** Supporting | **Romanceable:** Yes
+**Generation:** Gen 2 | **Ship:** Native | **Archetype:** Secondary
 
 ---
 

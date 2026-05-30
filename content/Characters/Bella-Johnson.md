@@ -6,7 +6,7 @@ generation: Gen 2
 ship: Native (born on Raea)
 status: Alive
 occupation: None specified (enjoys being provided for)
-archetype: Anti-Hero
+archetype: Secondary
 romanceable: true
 ---
 
@@ -14,7 +14,7 @@ romanceable: true
 
 > *"Ugh. Farming. My nails are already ruined."*
 
-**Generation:** Gen 2 | **Ship:** Native | **Archetype:** Anti-Hero | **Romanceable:** Yes
+**Generation:** Gen 2 | **Ship:** Native | **Archetype:** Secondary
 
 ---
 

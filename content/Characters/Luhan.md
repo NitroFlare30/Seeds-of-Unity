@@ -7,13 +7,13 @@ ship: Native (born on Raea)
 status: Alive
 occupation: Settlement Doctor
 skills: [Medicine, Science, Research]
-archetype: NPC
+archetype: Background
 romanceable: false
 ---
 
 # Luhan Nkosi
 
-**Generation:** Gen 1 | **Ship:** Native | **Archetype:** NPC | **Romanceable:** No
+**Generation:** Gen 1 | **Ship:** Native | **Archetype:** Background
 
 ---
 

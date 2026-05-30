@@ -7,7 +7,7 @@ ship: Native (born on Raea)
 status: Alive
 occupation: Rancher / Farmer
 skills: [Farming, Foraging, Hunting]
-archetype: Supporting
+archetype: Secondary
 romanceable: true
 ---
 
@@ -15,7 +15,7 @@ romanceable: true
 
 > *"Welcome to the ranch! Don't worry, Spuddy the potato doesn't bite."*
 
-**Generation:** Gen 2 | **Ship:** Native | **Archetype:** Supporting | **Romanceable:** Yes
+**Generation:** Gen 2 | **Ship:** Native | **Archetype:** Secondary
 
 ---
 

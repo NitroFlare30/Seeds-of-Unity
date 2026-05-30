@@ -7,7 +7,7 @@ ship: Native (born on Raea)
 status: Alive
 occupation: Farmer's Market (raised by Ben)
 skills: [Foraging, Farming]
-archetype: Supporting
+archetype: Secondary
 romanceable: true
 ---
 
@@ -15,7 +15,7 @@ romanceable: true
 
 > *"Ugh, go take a shower, stinky. ...I'm kidding. Mostly."*
 
-**Generation:** Gen 2 | **Ship:** Native | **Archetype:** Supporting | **Romanceable:** Yes
+**Generation:** Gen 2 | **Ship:** Native | **Archetype:** Secondary
 
 ---
 

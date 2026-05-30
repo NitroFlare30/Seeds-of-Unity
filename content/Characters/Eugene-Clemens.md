@@ -1,13 +1,13 @@
 ---
 title: Eugene Clemens
 description: Anxious, apologetic, helpful secretary to the Mayor. Romanceable.
-tags: [character, gen-1, romanceable]
-generation: Gen 1
+tags: [character, gen-2, romanceable]
+generation: Gen 2
 ship: Native (born on Raea)
 status: Alive
 occupation: Secretary / Assistant to Mayor Johnson
 skills: [Accounting, Customer Service, Logistics]
-archetype: Supporting
+archetype: Secondary
 romanceable: true
 ---
 
@@ -15,7 +15,7 @@ romanceable: true
 
 > *"Oh! I'm so sorry, I forgot — wait, no, I didn't forget, I just — I'm sorry."*
 
-**Generation:** Gen 1 | **Ship:** Native | **Archetype:** Supporting | **Romanceable:** Yes
+**Generation:** Gen 2 | **Ship:** Native | **Archetype:** Secondary
 
 ---
 

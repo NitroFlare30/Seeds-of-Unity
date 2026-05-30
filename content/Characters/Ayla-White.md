@@ -5,13 +5,13 @@ tags: [character, gen-2, romanceable]
 generation: Gen 2
 ship: Native (born on Raea)
 status: Alive
-archetype: Supporting
+archetype: Secondary
 romanceable: true
 ---
 
 # Ayla White
 
-**Generation:** Gen 2 | **Ship:** Native | **Archetype:** Supporting | **Romanceable:** Yes
+**Generation:** Gen 2 | **Ship:** Native | **Archetype:** Secondary
 
 ---
 

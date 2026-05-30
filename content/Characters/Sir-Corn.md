@@ -3,7 +3,7 @@ title: Sir Corn
 description: A sentient corn wearing a top hat who lives in a cave with butter and just wants friends.
 tags: [character, npc]
 status: Alive
-archetype: NPC
+archetype: Main
 romanceable: false
 ---
 

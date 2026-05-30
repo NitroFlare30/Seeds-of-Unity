@@ -7,7 +7,7 @@ ship: Native (born on Raea)
 status: Alive
 occupation: Caretaker / Clinic worker
 skills: [Caretaking, Nursing, Medicine]
-archetype: Supporting
+archetype: Secondary
 romanceable: true
 ---
 
@@ -15,7 +15,7 @@ romanceable: true
 
 > *"Have you eaten today? Don't lie to me. I can tell."*
 
-**Generation:** Gen 2 | **Ship:** Native | **Archetype:** Supporting | **Romanceable:** Yes
+**Generation:** Gen 2 | **Ship:** Native | **Archetype:** Secondary
 
 ---
 

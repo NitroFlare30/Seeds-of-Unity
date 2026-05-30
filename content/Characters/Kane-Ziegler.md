@@ -7,7 +7,7 @@ ship: Native (born on Raea)
 status: Alive
 occupation: Scientist / Engineer
 skills: [Science, Engineering, Research, Circuitry, Robotics]
-archetype: Anti-Hero
+archetype: Secondary
 romanceable: true
 ---
 
@@ -15,7 +15,7 @@ romanceable: true
 
 > *"I don't have time for this. Or you, frankly."*
 
-**Generation:** Gen 2 | **Ship:** Native | **Archetype:** Anti-Hero | **Romanceable:** Yes
+**Generation:** Gen 2 | **Ship:** Native | **Archetype:** Secondary
 
 ---
 

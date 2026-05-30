@@ -5,7 +5,7 @@ tags: [character, gen-1, npc]
 generation: Gen 1
 ship: Native (born on Raea)
 status: Alive (presumed dead by settlement)
-archetype: NPC
+archetype: Main
 romanceable: false
 ---
 

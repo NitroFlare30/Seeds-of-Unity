@@ -7,7 +7,7 @@ ship: Native (born on Raea)
 status: Alive
 occupation: Fisherman
 skills: [Fishing, Cooking]
-archetype: Supporting
+archetype: Secondary
 romanceable: true
 ---
 
@@ -15,7 +15,7 @@ romanceable: true
 
 > *"Patience, my young friend. The fish always comes to those who wait."*
 
-**Generation:** Gen 1 | **Ship:** Native | **Archetype:** Supporting | **Romanceable:** Yes
+**Generation:** Gen 1 | **Ship:** Native | **Archetype:** Secondary
 
 ---
 

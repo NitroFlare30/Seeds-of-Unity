@@ -6,7 +6,7 @@ generation: Solace crew
 ship: Solace
 status: Alive
 occupation: Unknown (arrived recently)
-archetype: Supporting
+archetype: Secondary
 romanceable: true
 ---
 
@@ -14,7 +14,7 @@ romanceable: true
 
 > *"DID YOU SEE THAT?! I tripped on AIR. I am literally too attractive for this planet."*
 
-**Generation:** Solace crew | **Ship:** Solace | **Archetype:** Supporting | **Romanceable:** Yes
+**Generation:** Solace crew | **Ship:** Solace | **Archetype:** Secondary
 
 ---
 

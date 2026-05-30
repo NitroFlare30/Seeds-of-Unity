@@ -7,7 +7,7 @@ ship: Solace
 status: Alive
 occupation: Settlement liaison / researcher
 skills: [Politics, Logistics, Science, Research, Public Speaking]
-archetype: Hero
+archetype: Main
 romanceable: true
 ---
 
@@ -15,7 +15,7 @@ romanceable: true
 
 > *"There's something off about the records. It's probably nothing. ...It's probably not nothing."*
 
-**Generation:** Solace crew | **Ship:** Solace | **Archetype:** Hero | **Romanceable:** Yes
+**Generation:** Solace crew | **Ship:** Solace | **Archetype:** Main
 
 ---
 

@@ -7,7 +7,7 @@ ship: Native (born on Raea)
 status: Alive
 occupation: Musician / Free Spirit
 skills: [Music, Foraging]
-archetype: Supporting
+archetype: Secondary
 romanceable: true
 ---
 
@@ -15,7 +15,7 @@ romanceable: true
 
 > *"Ayyy, the ecosystem's vibe is different today, man. Can you feel it?"*
 
-**Generation:** Gen 2 | **Ship:** Native | **Archetype:** Supporting | **Romanceable:** Yes
+**Generation:** Gen 2 | **Ship:** Native | **Archetype:** Secondary
 
 ---
 
