@@ -8,6 +8,10 @@ A lore wiki for **Seeds of Unity**, a colony life-sim RPG set on Planet Raea. Th
 
 The `content/` directory holds all the actual lore (Markdown), while `quartz/` contains the SSG engine itself.
 
+Key narrative context not obvious from the file structure:
+- The player character arrives aboard the **Solace**, ~62 years after the settlement was founded
+- Two additional ships were expected to follow the Solace but never arrived — their fate is a central mystery hook
+
 ## Commands
 
 ```bash
