@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mill UI Mockup</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #4a4a4a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Caveat', cursive;
+    }
+
+    /* ── Outer panel ── */
+    .panel {
+      position: relative;
+      background: #b8885a;
+      border: 5px solid #5C2810;
+      border-radius: 12px;
+      padding: 18px 18px 18px 18px;
+      width: 780px;
+      box-shadow: inset 0 0 0 3px #d4a070, 4px 4px 0 #2e1008;
+    }
+
+    /* ── Title bar ── */
+    .title-bar {
+      position: absolute;
+      top: -22px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #5C2810;
+      border: 3px solid #2e1008;
+      border-radius: 8px;
+      padding: 4px 28px;
+      color: #f5ddb0;
+      font-size: 22px;
+      font-weight: 700;
+      white-space: nowrap;
+      box-shadow: 2px 2px 0 #1a0800;
+    }
+
+    /* ── Two-column body ── */
+    .body {
+      display: flex;
+      gap: 16px;
+      margin-top: 12px;
+    }
+
+    /* ══════════════════════════════
+       LEFT — craftable grid
+    ══════════════════════════════ */
+    .grid-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .grid-label {
+      color: #f5ddb0;
+      font-size: 13px;
+      opacity: 0.7;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+
+    .craft-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+
+    .slot {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      background: #c9a070;
+      border: 3px solid #5C2810;
+      border-radius: 6px;
+      box-shadow: inset 0 0 0 2px #d4a870;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color 0.12s, transform 0.1s;
+      overflow: visible;
+    }
+    .slot:hover { border-color: #e8c060; transform: scale(1.05); }
+    .slot.selected { border-color: #e8c060; box-shadow: inset 0 0 0 2px #d4a870, 0 0 8px #e8c06088; }
+
+    /* slot icon placeholder (replace with real sprites) */
+    .slot-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 4px;
+      opacity: 1;
+    }
+
+    /* State: missing ingredients — dim + dusty rose badge */
+    .slot.missing .slot-icon { opacity: 0.6; }
+    .slot.missing::after {
+      content: '!';
+      position: absolute;
+      top: -6px; right: -6px;
+      width: 18px; height: 18px;
+      background: #C08878;
+      border: 2px solid #5C2810;
+      border-radius: 50%;
+      color: #f5ddb0;
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 16px;
+      text-align: center;
+    }
+
+    /* State: locked — greyed + lock icon */
+    .slot.locked .slot-icon { opacity: 0.35; filter: grayscale(1); }
+    .slot.locked::after {
+      content: '🔒';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 22px;
+    }
+    .slot.locked { cursor: not-allowed; }
+    .slot.locked:hover { border-color: #5C2810; transform: none; }
+
+    /* State: ready — subtle forest green dot */
+    .slot.ready::before {
+      content: '';
+      position: absolute;
+      bottom: 4px; right: 4px;
+      width: 8px; height: 8px;
+      background: #3A5438;
+      border: 1.5px solid #2e1008;
+      border-radius: 50%;
+    }
+
+    /* ══════════════════════════════
+       RIGHT panel
+    ══════════════════════════════ */
+    .right-panel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* ── Queue row ── */
+    .queue-section { display: flex; flex-direction: column; gap: 4px; }
+    .queue-label {
+      color: #f5ddb0;
+      font-size: 13px;
+      opacity: 0.7;
+      letter-spacing: 0.5px;
+    }
+    .queue-row { display: flex; align-items: flex-end; gap: 8px; }
+
+    .queue-slot {
+      position: relative;
+      background: #c9a070;
+      border: 3px solid #5C2810;
+      border-radius: 6px;
+      box-shadow: inset 0 0 0 2px #d4a870;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      padding-bottom: 4px;
+    }
+
+    /* Active (first) queue slot — larger, teal highlight */
+    .queue-slot.active {
+      width: 74px;
+      border-color: #7AAAA0;
+      box-shadow: inset 0 0 0 2px #d4a870, 0 0 10px #7AAAA066;
+    }
+    .queue-slot.active .q-icon { width: 56px; height: 56px; }
+
+    /* Inactive queue slots — smaller */
+    .queue-slot.inactive { width: 60px; }
+    .queue-slot.inactive .q-icon { width: 44px; height: 44px; }
+
+    .q-icon { border-radius: 3px; display: block; margin: 0 auto; }
+
+    /* Progress bar under active slot */
+    .progress-bar-wrap {
+      width: calc(100% - 8px);
+      height: 5px;
+      background: #5C2810;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      width: 38%;
+      background: #7AAAA0;
+      border-radius: 3px;
+      transition: width 0.3s;
+    }
+
+    .q-time {
+      font-size: 12px;
+      color: #f5ddb0;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+    .q-time .clock { font-size: 11px; opacity: 0.7; }
+
+    /* Active label */
+    .active-label {
+      position: absolute;
+      top: -10px;
+      left: 50%; transform: translateX(-50%);
+      background: #7AAAA0;
+      border: 2px solid #5C2810;
+      border-radius: 4px;
+      color: #f5ddb0;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 0 5px;
+      white-space: nowrap;
+    }
+
+    /* ── Divider ── */
+    .divider {
+      height: 2px;
+      background: linear-gradient(to right, transparent, #5C281088, transparent);
+      border-radius: 1px;
+    }
+
+    /* ── Item detail ── */
+    .detail-section { display: flex; flex-direction: column; gap: 10px; }
+
+    .detail-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .detail-icon {
+      width: 64px; height: 64px;
+      border: 3px solid #5C2810;
+      border-radius: 6px;
+      box-shadow: inset 0 0 0 2px #d4a870;
+      flex-shrink: 0;
+    }
+    .detail-name {
+      color: #f5ddb0;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+    .detail-desc {
+      color: #9E8CB0;
+      font-size: 14px;
+      margin-top: 2px;
+    }
+
+    /* Ingredients */
+    .ingredients { display: flex; flex-direction: column; gap: 5px; }
+    .ingredient-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 8px;
+      background: #a87848;
+      border-radius: 5px;
+      border: 2px solid #5C281055;
+    }
+    .ing-left { display: flex; align-items: center; gap: 8px; }
+    .ing-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      border: 1.5px solid #2e100840;
+    }
+    .ing-name { color: #f5ddb0; font-size: 17px; }
+    .ing-qty {
+      font-size: 16px;
+      font-weight: 700;
+      padding: 1px 7px;
+      border-radius: 4px;
+    }
+    .ing-qty.ok   { background: #2a3e28; color: #c8e8b8; }
+    .ing-qty.warn { background: #7a4848; color: #f5ddb0; }
+    .ing-dot.ok   { background: #3A5438; }
+    .ing-dot.warn { background: #C08878; }
+
+    /* ── Quantity & Add row ── */
+    .action-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #a87848;
+      border-radius: 6px;
+      border: 2px solid #5C281055;
+      padding: 8px 12px;
+    }
+
+    .qty-block { display: flex; flex-direction: column; gap: 4px; }
+    .qty-label { color: #9E8CB0; font-size: 13px; }
+    .qty-control { display: flex; align-items: center; gap: 6px; }
+    .qty-btn {
+      background: #5C2810;
+      border: 2px solid #2e1008;
+      border-radius: 4px;
+      color: #f5ddb0;
+      font-size: 18px;
+      width: 28px; height: 28px;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.1s;
+      font-family: 'Caveat', cursive;
+    }
+    .qty-btn:hover { background: #7a3e14; }
+    .qty-value {
+      background: #c9a070;
+      border: 2px solid #5C2810;
+      border-radius: 4px;
+      color: #f5ddb0;
+      font-size: 18px;
+      font-weight: 700;
+      width: 40px; height: 28px;
+      text-align: center;
+      line-height: 24px;
+      font-family: 'Caveat', cursive;
+    }
+
+    .time-block {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .time-label { color: #9E8CB0; font-size: 13px; }
+    .time-value { color: #f5ddb0; font-size: 18px; font-weight: 600; }
+
+    .add-btn {
+      background: #5C2810;
+      border: 3px solid #2e1008;
+      border-radius: 7px;
+      color: #f5ddb0;
+      font-size: 19px;
+      font-family: 'Caveat', cursive;
+      font-weight: 700;
+      padding: 8px 18px;
+      cursor: pointer;
+      white-space: nowrap;
+      box-shadow: 2px 2px 0 #1a0800;
+      transition: background 0.1s, transform 0.1s;
+      flex-shrink: 0;
+    }
+    .add-btn:hover { background: #7a3e14; transform: translateY(-1px); }
+    .add-btn:active { transform: translateY(1px); box-shadow: 1px 1px 0 #1a0800; }
+    .add-btn:disabled {
+      background: #5c4838;
+      color: #9E8CB0;
+      cursor: not-allowed;
+      box-shadow: none;
+      transform: none;
+    }
+
+    /* ── Legend ── */
+    .legend {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 4px;
+    }
+    .legend-item {
+      display: flex; align-items: center; gap: 5px;
+      color: #9E8CB0; font-size: 13px;
+    }
+    .legend-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      border: 1.5px solid #2e100860;
+    }
+  </style>
+</head>
+<body>
+<div class="panel">
+  <div class="title-bar">Nitro10 Mill</div>
+
+  <div class="body">
+
+    <!-- ════ LEFT: craftable grid ════ -->
+    <div class="grid-panel">
+      <div class="craft-grid">
+        <!-- Row 1 -->
+        <div class="slot ready selected" title="Flour"><div class="slot-icon" style="background:#d4c080;"></div></div>
+        <div class="slot ready" title="Stone Meal"><div class="slot-icon" style="background:#a09878;"></div></div>
+        <div class="slot missing" title="Crystal Powder"><div class="slot-icon" style="background:#80b0d4;"></div></div>
+        <div class="slot ready" title="Dried Herb Mix"><div class="slot-icon" style="background:#78a060;"></div></div>
+        <!-- Row 2 -->
+        <div class="slot missing" title="Spice Blend"><div class="slot-icon" style="background:#c08050;"></div></div>
+        <div class="slot ready" title="Ground Seed"><div class="slot-icon" style="background:#b09060;"></div></div>
+        <div class="slot ready" title="Bark Dust"><div class="slot-icon" style="background:#987860;"></div></div>
+        <div class="slot locked" title="???"><div class="slot-icon" style="background:#806050;"></div></div>
+        <!-- Row 3 -->
+        <div class="slot locked" title="???"><div class="slot-icon" style="background:#806050;"></div></div>
+        <div class="slot ready" title="Sunflour"><div class="slot-icon" style="background:#e0c040;"></div></div>
+        <div class="slot missing" title="Moon Dust"><div class="slot-icon" style="background:#c0b8e8;"></div></div>
+        <div class="slot ready" title="Root Powder"><div class="slot-icon" style="background:#9a7858;"></div></div>
+        <!-- Row 4 -->
+        <div class="slot ready" title="Husked Grain"><div class="slot-icon" style="background:#c4a858;"></div></div>
+        <div class="slot missing" title="Salt Grind"><div class="slot-icon" style="background:#d8d4c0;"></div></div>
+        <div class="slot ready" title="Dry Mix"><div class="slot-icon" style="background:#b09870;"></div></div>
+        <div class="slot locked" title="???"><div class="slot-icon" style="background:#806050;"></div></div>
+        <!-- Row 5 -->
+        <div class="slot locked" title="???"><div class="slot-icon" style="background:#806050;"></div></div>
+        <div class="slot locked" title="???"><div class="slot-icon" style="background:#806050;"></div></div>
+        <div class="slot ready" title="Pressed Pulp"><div class="slot-icon" style="background:#a0904a;"></div></div>
+        <div class="slot ready" title="Fine Grit"><div class="slot-icon" style="background:#b8a880;"></div></div>
+      </div>
+
+      <!-- Legend -->
+      <div class="legend">
+        <div class="legend-item"><div class="legend-dot" style="background:#3A5438;"></div> Ready</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#C08878;"></div> Missing items</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#5c4838;"></div> Locked</div>
+      </div>
+    </div>
+
+    <!-- ════ RIGHT panel ════ -->
+    <div class="right-panel">
+
+      <!-- Queue -->
+      <div class="queue-section">
+        <div class="queue-label" style="color:#9E8CB0;">⚙ Crafting Queue</div>
+        <div class="queue-row">
+
+          <!-- Active slot (larger, progress bar, label) -->
+          <div class="queue-slot active">
+            <div class="active-label">CRAFTING</div>
+            <div class="q-icon" style="background:#d4c080; width:56px; height:56px; border-radius:3px; margin-top:10px;"></div>
+            <div class="progress-bar-wrap"><div class="progress-bar-fill"></div></div>
+            <div class="q-time"><span class="clock">⏱</span> 12:30</div>
+          </div>
+
+          <!-- Queued slots -->
+          <div class="queue-slot inactive">
+            <div class="q-icon" style="background:#78a060; width:44px; height:44px; border-radius:3px; margin-top:6px;"></div>
+            <div class="q-time"><span class="clock">⏱</span> 8:15</div>
+          </div>
+          <div class="queue-slot inactive">
+            <div class="q-icon" style="background:#c08050; width:44px; height:44px; border-radius:3px; margin-top:6px;"></div>
+            <div class="q-time"><span class="clock">⏱</span> 3:40</div>
+          </div>
+          <div class="queue-slot inactive">
+            <div class="q-icon" style="background:#80b0d4; width:44px; height:44px; border-radius:3px; margin-top:6px;"></div>
+            <div class="q-time"><span class="clock">⏱</span> 22:00</div>
+          </div>
+          <div class="queue-slot inactive">
+            <div class="q-icon" style="background:#e0c040; width:44px; height:44px; border-radius:3px; margin-top:6px;"></div>
+            <div class="q-time"><span class="clock">⏱</span> 1:05</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Item detail -->
+      <div class="detail-section">
+
+        <div class="detail-header">
+          <div class="detail-icon" style="background:#d4c080;"></div>
+          <div>
+            <div class="detail-name">Long Item Name</div>
+            <div class="detail-desc">Refined flour for baking and trade.</div>
+          </div>
+        </div>
+
+        <div class="ingredients">
+          <div class="ingredient-row">
+            <div class="ing-left">
+              <div class="ing-dot ok"></div>
+              <span class="ing-name">Ingredient 1 Text</span>
+            </div>
+            <span class="ing-qty ok">12 / 10</span>
+          </div>
+          <div class="ingredient-row">
+            <div class="ing-left">
+              <div class="ing-dot ok"></div>
+              <span class="ing-name">Ingredient 2 Text</span>
+            </div>
+            <span class="ing-qty ok">99 / 5</span>
+          </div>
+          <div class="ingredient-row">
+            <div class="ing-left">
+              <div class="ing-dot warn"></div>
+              <span class="ing-name">Ingredient 3 Text</span>
+            </div>
+            <span class="ing-qty warn">2 / 10</span>
+          </div>
+          <div class="ingredient-row">
+            <div class="ing-left">
+              <div class="ing-dot warn"></div>
+              <span class="ing-name">Ingredient 4 Text</span>
+            </div>
+            <span class="ing-qty warn">0 / 3</span>
+          </div>
+        </div>
+
+        <!-- Quantity + time + button -->
+        <div class="action-row">
+          <div class="qty-block">
+            <div class="qty-label">Quantity</div>
+            <div class="qty-control">
+              <button class="qty-btn">←</button>
+              <div class="qty-value">1</div>
+              <button class="qty-btn">→</button>
+            </div>
+          </div>
+
+          <div class="time-block">
+            <div class="time-label">⏱ Total time</div>
+            <div class="time-value">2d 14h 30m</div>
+          </div>
+
+          <button class="add-btn" disabled title="Missing ingredients">Add to Queue</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

@@ -1,14 +1,18 @@
 ---
 title: Alex Everett
 description: Wise, grandfatherly fisherman and philosopher. Romanceable.
-tags: [character, gen-1, romanceable]
+tags:
+  - character
+  - gen-1
 generation: Gen 1
 ship: Native (born on Raea)
 status: Alive
 occupation: Fisherman
-skills: [Fishing, Cooking]
+skills:
+  - Fishing
+  - Cooking
 archetype: Secondary
-romanceable: true
+romanceable: false
 ---
 
 # Alex Everett
@@ -42,13 +46,12 @@ Wise, reflective, grandfatherly, philosophical. Alex speaks with warmth and earn
 
 ## Relationships
 
-| Person | Relationship |
-|---|---|
-| **Jaycee Willow** | Mother (deceased) |
-| **Marco Everett** | Father (deceased, Tranquility crew) |
-| **Darryl ("Uncle Dink")** | Half-brother through Jaycee (both unaware) |
-| **Corinne** | Wife (deceased — Miku Ishikawa's surrogate daughter) |
-| **The Player** | Surrogate son/family |
+| Person                    | Relationship                                         |
+| ------------------------- | ---------------------------------------------------- |
+| **Jaycee Willow**         | Mother (deceased)                                    |
+| **Marco Everett**         | Father (deceased, Tranquility crew)                  |
+| **Darryl ("Uncle Dink")** | Half-brother through Jaycee (both unaware)           |
+| **Corinne**               | Wife (deceased — Miku Ishikawa's surrogate daughter) |
 
 ---
 
