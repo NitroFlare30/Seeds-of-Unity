@@ -36,3 +36,10 @@ A colony life-sim RPG set on **Planet Raea**, following the descendants of human
 - [[Farming/Crop-Families|🌱 Crop Families]] — Five families, unlock methods, progression
 - [[Farming/Crystal-Nodes|💎 Crystal Nodes]] — Node types and maintenance
 - [[Farming/Himmies|🌸 Himmies]] — Ecosystem feedback creatures
+
+### Mining Systems
+- [[Mining/index|⛏️ Mining Overview]] — Leveled mine, resonant crystal puzzle, Greed risk system
+- [[Mining/Mine-Structure|🪜 Mine Structure & Depth Tiers]] — Floors, checkpoints, ore/gem distribution
+- [[Mining/Resonant-Crystals|💠 Resonant Crystal Puzzle]] — Shape-based chain detonation
+- [[Mining/Greed|😈 Greed Subsystem]] — Risk that escalates the longer you overstay
+- [[Mining/Hazards|⚠️ Mine Hazards]] — Unstable tiles, gas pockets, corrupted/wild crystals

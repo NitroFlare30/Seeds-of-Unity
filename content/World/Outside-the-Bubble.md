@@ -36,7 +36,7 @@ The **empty food box** that Atkins used to fill lives here — the first thing [
 
 ## 3. Mine Entrance
 
-Source of minerals for crystal node maintenance and crystal crop seeds/materials.
+Source of minerals for crystal node maintenance and crystal crop seeds/materials. See [[Mining/index|Mining Overview]] for the full mine system — leveled floors, the resonant crystal puzzle, and the Greed risk mechanic.
 
 Visual design TBD — natural cave system or something more distinctly alien to Raea.
 

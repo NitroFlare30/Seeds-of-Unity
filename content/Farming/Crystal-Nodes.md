@@ -42,7 +42,7 @@ Unlike Earth crops that only need watering and fertilizer, **Raea crops rely on 
 ## System Integrations
 
 ### Mining ↔ Farming
-- Mine for minerals → maintain crystal nodes → unlock crystal crop access → thrive in Teal Season
+- [[Mining/index|Mine]] for minerals → maintain crystal nodes → unlock crystal crop access → thrive in Teal Season
 
 ### Foraging ↔ Farming
 - Forage for materials → maintain pod nodes → pod nodes produce random crops (including root crops)
