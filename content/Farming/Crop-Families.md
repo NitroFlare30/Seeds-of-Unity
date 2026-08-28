@@ -8,6 +8,8 @@ tags: [farming, crops]
 
 **~30 total crops by end-game** across five families. ~5–6 new crops per season.
 
+> ⚠️ **OPEN:** this math assumed [[Five-Seasons|5 seasons]] (25-30 crops at 5-6/season). The season count was cut to **3** (Teal, Gray, Plum — see [[Five-Seasons]]). Not yet redecided: either total crop count drops to ~15-18 at the same 5-6/season pace, or density goes up to ~10 crops/season to hold ~30 total. Resolve before finalizing the still-unnamed crystal crop roster.
+
 ---
 
 ## Five Crop Families

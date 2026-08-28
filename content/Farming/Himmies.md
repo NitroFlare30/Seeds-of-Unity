@@ -41,7 +41,7 @@ Himmies show up **when the ecosystem has something to say** — good or bad. Abs
 
 | Type | Description |
 |---|---|
-| **Transition Himmie** | Appears when a season is about to change. Flower slowly shifts toward the incoming season's palette. One type covers all five seasons — player reads the flower color. |
+| **Transition Himmie** | Appears when a season is about to change. Flower slowly shifts toward the incoming season's palette. One type covers all three seasons — player reads the flower color. Now the only warning a player gets before a randomized-length season ends, since there's no visual crossfade between seasons. |
 
 **Final roster: 7 types** — Elated, Happy, Content, Corrupting, Johimmy, Dead, Transition
 

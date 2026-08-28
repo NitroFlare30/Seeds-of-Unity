@@ -1,6 +1,6 @@
 ---
 title: Farming Overview
-description: Raea's alien farming system — crystal nodes, five seasons, and ecosystem feedback.
+description: Raea's alien farming system — crystal nodes, three randomized-length seasons, and ecosystem feedback.
 tags: [farming, systems]
 ---
 
@@ -37,7 +37,7 @@ Raea crops are completely separate from Earth crops due to binary star UV radiat
 
 1. **Phased growth** instead of linear progression
 2. **[[Crystal-Nodes|Crystal nodes & ecosystem objects]]** required for growth
-3. **[[Five-Seasons|Binary star seasonal system]]** — 5 distinct seasons, not Earth seasons
+3. **[[Five-Seasons|Binary star seasonal system]]** — 3 distinct seasons (randomized 8-14 day length), not Earth seasons
 4. **[[Himmies]]** — visual ecosystem feedback system
 
 ---
@@ -55,7 +55,7 @@ The exterior farm is where the player's Raea farming happens — and its success
 
 ## Related Pages
 
-- [[Five-Seasons|Five Seasons & Color Palette]]
+- [[Five-Seasons|Raea's Seasons & Color Palette]]
 - [[Crop-Families|Crop Families & Progression]]
 - [[Crystal-Nodes|Crystal Nodes & Ecosystem Objects]]
 - [[Himmies|Himmies as Feedback System]]
