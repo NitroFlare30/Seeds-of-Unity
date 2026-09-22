@@ -43,3 +43,9 @@ A colony life-sim RPG set on **Planet Raea**, following the descendants of human
 - [[Mining/Resonant-Crystals|💠 Resonant Crystal Puzzle]] — Shape-based chain detonation
 - [[Mining/Greed|😈 Greed Subsystem]] — Risk that escalates the longer you overstay
 - [[Mining/Hazards|⚠️ Mine Hazards]] — Unstable tiles, gas pockets, corrupted/wild crystals
+
+### Festivals
+- [[Festivals/index|🎉 Festivals Overview]] — Settlement festival calendar
+- [[Festivals/Planting-Day|🌷 Planting Day]] · [[Festivals/Twin-Stars|✨ Twin Stars]] · [[Festivals/Miners-Day|⛏️ Miner's Day]] · [[Festivals/Landing-Day|🚀 Landing Day]]
+- [[Festivals/Harvest-Fair|🏆 Harvest Fair]] · [[Festivals/Ember-Night|🎄 Ember Night]] · [[Festivals/New-Years|🎆 New Year's]] · [[Festivals/Earth-Day|🌍 Earth Day]]
+- [[Festivals/Tanilian-Festivals|🐢 Tanilian Festivals]] — Late-game Unity Festival and Night of Names
